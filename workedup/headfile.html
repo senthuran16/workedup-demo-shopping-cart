@@ -1,0 +1,32 @@
+<!--HTML document to define the layout of the head and the navigation bar-->
+
+<div id="container">
+	<div id="header">
+		<a id="siteLogo" href="index.php"><img src=workedup_logo.png></a>
+		<h3>
+			<?php
+			// set default timezone
+			date_default_timezone_set('Asia/Colombo');
+
+			// display with time
+			echo date(' d F Y H:i:s');?>
+		</h3>
+		<h3>
+
+		</h3>
+	</div>
+
+	<div id="navigation">
+		<!-- <ul>
+			<li><a href="index.php">Index</a></li>
+			<li><a href="basket.php">My Basket</a></li>
+			<li><a href="register.php">Register</a></li>
+			<li><a href="login.php">Login</a></li>
+		</ul> -->
+		<?php
+
+			include("detectlogin.php");
+		?>
+	</div>
+
+	<div id="content">
